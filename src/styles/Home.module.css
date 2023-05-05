@@ -3,8 +3,8 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
+  padding: 9rem;
+  min-height: 20vh;
 }
 
 .description {
@@ -41,9 +41,7 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(25%, auto));
-  width: var(--max-width);
-  max-width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .card {
@@ -134,7 +132,6 @@
   .grid {
     grid-template-columns: 1fr;
     margin-bottom: 120px;
-    max-width: 320px;
     text-align: center;
   }
 
