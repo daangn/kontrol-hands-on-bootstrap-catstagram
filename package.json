@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:bin": "yarn esbuild bin/put-image.js --target=node20 --outdir=build/ --bundle --packages=external --loader:=js",
     "start": "next start",
     "lint": "next lint"
   },
@@ -17,5 +18,8 @@
     "react-dom": "18.2.0",
     "swr": "^2.1.5"
   },
-  "packageManager": "yarn@4.0.1"
+  "packageManager": "yarn@4.0.1",
+  "devDependencies": {
+    "esbuild": "^0.19.5"
+  }
 }
