@@ -1,4 +1,4 @@
-FROM node:18-alpine
+FROM node:20-alpine
  
 WORKDIR /app
  
@@ -9,7 +9,7 @@ COPY jsconfig.json next.config.js package.json yarn.lock .yarnrc.yml .pnp.cjs .p
 COPY src ./src
 COPY public ./public
 
-RUN yarn set version 3.5.1
+RUN yarn set version 4.0.1
 RUN yarn install --immutable
 
 RUN yarn build
