@@ -10,5 +10,5 @@ Docker build 할 때를 기준으로 해야하므로 종속성 업데이트는 �
 명령어로 진행해주세요.
 
 ```bash
-docker run --rm -v $PWD:/app -w /app node:22-slim yarn add <package-name>
+docker run --rm -v $PWD:/app -w /app node:22-alpine yarn add <package-name>
 ```
