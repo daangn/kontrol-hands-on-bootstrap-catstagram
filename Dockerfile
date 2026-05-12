@@ -9,7 +9,6 @@ COPY jsconfig.json next.config.js package.json yarn.lock .yarnrc.yml .pnp.cjs .p
 COPY src ./src
 COPY public ./public
 
-RUN yarn set version 4.0.1
 RUN yarn install --immutable
 
 RUN yarn build
